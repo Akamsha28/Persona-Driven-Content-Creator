@@ -41,3 +41,17 @@ if __name__ == "__main__":
     # Print the final result to the console
     print("\n----- Generated LinkedIn Post -----")
     print(linkedin_post)
+
+# This block runs the code and prints the result.
+if __name__ == "__main__":
+    my_topic = "The challenge of keeping data pipelines efficient as data volume grows."
+
+    # --- Call the LinkedIn Persona ---
+    linkedin_post = generate_content("my_linkedin_persona.txt", my_topic)
+    print("\n----- Generated LinkedIn Post -----")
+    print(linkedin_post)
+
+    # --- Call the Twitter Persona ---
+    tweet = generate_content("twitter_comedian.txt", my_topic)
+    print("\n----- Generated Tweet -----")
+    print(tweet)
